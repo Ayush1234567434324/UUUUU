@@ -15,7 +15,7 @@ ball.addEventListener("click", () => {
 
 
 
-audio1 = new  Audio("Audio/audio1.mp3");
+audio1 = new  Audio("Audio/Audio1.mp3");
 
 
 
