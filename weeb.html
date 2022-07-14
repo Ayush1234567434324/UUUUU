@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="icon" href="logo/logo-1.png"  />
+    <link rel="stylesheet" href="weeb.css" type="text/css" />
+   <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeebMania - Watch your Fav Anime online</title>
+</head>    
+<body>
+<div class="navbar">
+<div class="navbar-container">
+    <div class="logo-container"><img class="logo" src="logo/logo-2.png"></div>
+    <div class="menu-container">
+        <ul class="menu-list">
+          <li class="menu-list-item active">Home</li>  
+          <li class="menu-list-item">Movies</li>
+          <li class="menu-list-item">Series</li>
+          <li class="menu-list-item">Popular</li>
+          <li class="menu-list-item">Trends</li>
+        </ul>
+    </div> 
+    <div class="profile-container">
+<img class="profile-picture"   src="logo/profile.webp" alt="">
+<div class="profile-text-container">
+    <span class="profile-text">Profile</span> 
+    <i class="fas fa-caret-down"></i>
+</div>
+<div class="toogle">
+    <i class="fas fa-moon toogle-icon"></i>
+    <i class="fas fa-sun toogle-icon"></i>
+    <div class="toogle-ball"></div>
+</div>
+    </div>
+</div>
+</div>
+<div class="sidebar">
+    <i class="left-menu-icon fas fa-search"></i>
+    <i class="left-menu-icon fas fa-home"></i>
+    <i class="left-menu-icon fas fa-users"></i>
+    <i class="left-menu-icon fas fa-bookmark"></i>
+    <i class="left-menu-icon fas fa-tv"></i>
+    <i class="left-menu-icon fas fa-hourglass-start"></i>
+    <i class="left-menu-icon fas fa-cart"></i>
+</div>
+<div class="container">
+    <div class="content-container">
+       <div class="featured-content" style="background:linear-gradient(to bottom , rgba(0,0,0,0) 20%,#151515 100%),linear-gradient(to left , rgba(0,0,0,0) 20% ,#151515 100%),url('logo/baki.jpg') no-repeat center center/cover">
+       <img class="feature-title" src="logo/banner.png">
+       <p class="featured-desc">To gain the skills he needs to surpass his powerful father, Baki enters Arizona State Prison to take on the notorious inmate known as Mr. Unchained.</p>
+       <button class="featured-button" id="0" onclick="toggle()">WATCH</button>
+       <div class="trailer">
+        <video src="trailer/Baki.mp4"  controls="true"></video>
+        <img src="logo/close.png" id="0" class="close"  onclick="close();">
+       </div>
+    </div>
+    <div class="movie-list-container">
+    <h1 class="movie-list-title">Baki Hanma</h1>
+    <div class="movie-list-wrapper">
+        <div class="movie-list ">
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/epi1.jpg">
+                <span class="movie-list-item-title"><b>Epi-1</b> The World's Strongest Senior</span>
+                <p class="movie-list-item-desc">The world is shaken by news of a man taking down a monstrous elephant with his bare hands. Back in Japan, Baki is confronted by a knife-wielding child.</p>
+                <button class="movie-list-button"   >Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/epi2.jpg">
+                <span class="movie-list-item-title"><b>Epi-2</b> Mixed species' martial arts</span>
+                <p class="movie-list-item-desc">To train for his eventual battle against his father, Baki spars against an imaginary giant praying mantis he’s created in his mind.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/epi3.jpg">
+                <span class="movie-list-item-title"><b>Epi-3</b> Prison and Hell</span>
+                <p class="movie-list-item-desc">In the middle of a heavily guarded parade, the President of the United States is kidnapped in plain sight by an unknown young man.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/epi4.jpg">
+                <span class="movie-list-item-title"><b>Epi-4</b> The Second</span>
+                <p class="movie-list-item-desc">Baki comes across a man known as “Mr. Second,” a powerful inmate who seems to enjoy special privileges within the prison.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/epi5.jpg">
+                <span class="movie-list-item-title"><b>Epi-5</b> Terrible Triplets</span>
+                <p class="movie-list-item-desc">With just a few weeks left on his sentence, Iron Michael is attacked by triplet hit men hired to make sure the ex-boxing champ never fights again.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/epi6.jpg">
+                <span class="movie-list-item-title"><b>Epi-6</b> Man of the Sea</span>
+                <p class="movie-list-item-desc">Just as the Mouth triplets are about to finish their attack on Iron Michael, Guevaru rolls in and instigates a fight.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/epi7.jpg">
+                <span class="movie-list-item-title"><b>Epi-7</b>  Hyper male and Hyper male</span>
+                <p class="movie-list-item-desc">Guevaru refuses to believe that Biscuit Oliva, the most notorious inmate in the prison, is comfortably serving his sentence in the company of his lover.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/epi8.jpg">
+                <span class="movie-list-item-title"><b>Epi-8</b> Gilberto Style</span>
+                <p class="movie-list-item-desc">The match between Guevaru and Oliva begins, and the rules are simple: They both hold onto the same piece of cloth and the first one to let go loses.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/epi9.jpg">
+                <span class="movie-list-item-title"><b>Epi-9</b>Decision Time</span>
+                <p class="movie-list-item-desc">Guevaru is fighting for the people of his impoverished homeland, and he won’t go down so easily. Later, Oliva makes a discovery.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/epi10.jpg">
+                <span class="movie-list-item-title"><b>Epi-10</b> Can't you laugh?</span>
+                <p class="movie-list-item-desc">Baki is surrounded by guards with their guns pointed right at him, but he doesn’t seem worried at all — he seems to be planning something.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/epi11.jpg">
+                <span class="movie-list-item-title"><b>Epi-11</b> The Prison Guard talks about it</span>
+                <p class="movie-list-item-desc">Oliva inadvertently kicks off a major incident when he enters Baki’s solitary confinement cell to challenge him to a fight in two weeks' time.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/epi12.jpg">
+                <span class="movie-list-item-title"><b>Epi-12</b> Beyond the Brawn</span>
+                <p class="movie-list-item-desc">Baki learns the hard way that he might not be ready to fight the man known as “Mr. Unchained” — Oliva’s power and technique are on another level.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+        </div>
+        <i onclick="arrow()"  class="fas fa-chevron-right arrow"></i>
+        <i onclick="brrow()"  class="fas fa-chevron-left brrow"></i>
+        
+    </div>
+</div>
+    </div>
+</div>
+<div class="container">
+    <div class="content-container">
+       <div class="featured-content" style="background:linear-gradient(to bottom , rgba(0,0,0,0) 90%,#151515 100%),linear-gradient(to left , rgba(0,0,0,0) 30% ,#151515 100%),url('logo/classroom_of_elites.jpg') no-repeat center center/cover">
+       <img class="feature-title" src="logo/banner1.png">
+       <p class="featured-desc">When Kiyotaka enters an elite government-sponsored high school, he finds out just how merit-based this education system is..</p>
+       <button class="featured-button" id="1" onclick="toggle()">WATCH</button>
+       <div class="trailer">
+        <video src="trailer/classroom of elites.mp4"  controls="true"></video>
+        <img src="logo/close.png" id="1" class="close"  onclick="close()">
+       </div>
+    </div>
+    <div class="movie-list-container">
+    <h1 class="movie-list-title">Classroom of Elites Season-1</h1>
+    <div class="movie-list-wrapper">
+        <div class="movie-list">
+            <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/coeepi1.jpg">
+                <span class="movie-list-item-title"><b>Epi-1</b> What Is Evil? Whatever Springs from Weakness.</span>
+                <p class="movie-list-item-desc">Melancholy, unmotivated Kiyotaka Ayanokouji attends his first day at Tokyo Metropoiltan Advanced Nurturing High School, a government-established institution for training a generation of Japan's best and brightest. In this school, it is said, everything is decided based on merit, which includes the generous monthly "point" allowance students can spend at local shops. As Ayanokouji begins navigating this system, he also nurtures curious relationships with aloof fellow outsider Suzune Horikita and the terminally gregarious Kikyou Kushida.</p>
+                <button class="movie-list-button"   >Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/coeepi2.jpg">
+                <span class="movie-list-item-title"><b>Epi-2</b> It Takes a Great Talent and Skill to Conceal One's Talent and Skill.</span>
+                <p class="movie-list-item-desc">1-D learn more about point system. They need to change their habits if they want to score some. But few students don't want to change even if they are facing expulsion.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/coeepi3.jpg">
+                <span class="movie-list-item-title"><b>Epi-3</b> Man Is an Animal That Makes Bargains: No Other Animal Does This - No Dog Exchanges Bones with Another.</span>
+                <p class="movie-list-item-desc">Kiyotaka explains to Suzune what he did last three days before test. And why everybody get such good scores on tests. But Sudo failed tests anyway and is going to be expelled.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/coeepi4.jpg">
+                <span class="movie-list-item-title"><b>Epi-4</b> We Should Not Be Upset That Others Hide the Truth from Us, When We Hide It So Often from Ourselves.</span>
+                <p class="movie-list-item-desc">Classrooms analyze their and others test results. Points distribution is late. Three students from 1-C reported Sudo for attacking them.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/coeepi5.jpg">
+                <span class="movie-list-item-title"><b>Epi-5</b> Hell Is Other People.</span>
+                <p class="movie-list-item-desc">Kiyotaka and Kushida go with Sakura to he mall where Sakura will try to repair her camera. After that Kiyotaka talk to Sakura about Sado's situation and should she talk about what she saw.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/coeepi6.jpg">
+                <span class="movie-list-item-title"><b>Epi-6</b> There Are Two Kinds of Lies; One Concerns an Accomplished Fact, the Other Concerns a Future Duty.</span>
+                <p class="movie-list-item-desc">Sakura received some weird messages on her portal, than some pictures of herself. Kiyotaka and Suzune are trying to find evidence that would set Sudo free.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/coeepi7.jpg">
+                <span class="movie-list-item-title"><b>Epi-7 </b> Nothing Is as Dangerous as an Ignorant Friend; a Wise Enemy Is to Be Preferred.</span>
+                <p class="movie-list-item-desc">Kiyotaka convince Suzune to join him and others at the pool.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/coeepi8.jpg">
+                <span class="movie-list-item-title"><b>Epi-8</b> Abandon All Hope, Ye Who Enter Here.</span>
+                <p class="movie-list-item-desc">All students go to the cruise. Chabashira informs Kiyotaka that somebody requested his expulsion. If he don't help others to promote to A class she will use first opportunity to expel him.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/coeepi9.jpg">
+                <span class="movie-list-item-title"><b>Epi-9</b> Man Is Condemned to Be Free.</span>
+                <p class="movie-list-item-desc">Survival test starts. Everybody starts with looking for camping sites. 1-D send 3 scout team made from 3 members each.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/coeepi10.jpg">
+                <span class="movie-list-item-title"><b>Epi-10</b> Every Man Has in Himself the Most Dangerous Traitor of All.</span>
+                <p class="movie-list-item-desc">Second day of survival test starts. Kiyotaka and Suzune go scouting other classes.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/coeepi11.jpg">
+                <span class="movie-list-item-title"><b>Epi-11</b> What People Commonly Call Fate is Mostly Their Own Stupidity.</span>
+                <p class="movie-list-item-desc">Day 5 of survival test. Girls want to separate from boys. Kiyotaka found out Suzune is being sick from the start.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+                <div class="movie-list-item">
+                <img class="movie-list-item-img" src="logo/coeepi12.jpg">
+                <span class="movie-list-item-title"><b>Epi-12</b> Genius Lives Only One Story Above Madness.</span>
+                <p class="movie-list-item-desc">Survival test is coming to the end. Things don't look well for 1-D. Key card is stolen. And now Suzune is forced to withdraw due to her sickness. Kiyotaka will try to turn things around.</p>
+                <button class="movie-list-button">Watch</button>
+            </div>
+        </div>
+        <i onclick="arrow()"  class="fas fa-chevron-right arrow"></i>
+        <i onclick="brrow()"  class="fas fa-chevron-left brrow"></i>
+        
+    </div>
+</div>
+    </div>
+    <div class="container">
+        <div class="content-container">
+           <div class="featured-content" style="background:linear-gradient(to bottom , rgba(0,0,0,0) 50%,#151515 100%),linear-gradient(to left , rgba(0,0,0,0) 30% ,#151515 100%),url('logo/record_of_ragnarok.jpg') no-repeat center center/cover">
+           <img class="feature-title" src="logo/banner2.png">
+           <p class="featured-desc">Every 1000 years, the Gods' Council assemble to decide the fate of humanity. After 7 million years of human history, the gods come to the decision that humans are irredeemable and must be extinct.</p>
+           <button class="featured-button" id="2" onclick="toggle()">WATCH</button>
+           <div class="trailer">
+            <video src="trailer/record of ragnarok.mp4"  controls="true"></video>
+            <img src="logo/close.png" id="2" class="close"  onclick="close()">
+           </div>
+        </div>
+        <div class="movie-list-container">
+        <h1 class="movie-list-title">Record of Ragnarok</h1>
+        <div class="movie-list-wrapper">
+            <div class="movie-list">
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="logo/rorepi1.jpg">
+                    <span class="movie-list-item-title"><b>Epi-1</b> Ragnarok</span>
+                    <p class="movie-list-item-desc">At the Council of Valhalla, the gods vote unanimously for humankind's extinction. But Brünnhilde, eldest of the Valkyrie sisters, raises her objection. </p>
+                    <button class="movie-list-button"   >Watch</button>
+                </div>
+                    <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="logo/rorepi2.jpg">
+                    <span class="movie-list-item-title"><b>Epi-2</b> Worthy Opponent</span>
+                    <p class="movie-list-item-desc">In the first round of the Ragnarok battle, Han dynasty warlord Lü Bu puts up a good fight against Norse god Thor, surprising the gods in attendance. </p>
+                    <button class="movie-list-button">Watch</button>
+                </div>
+                    <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="logo/rorepi3.jpg">
+                    <span class="movie-list-item-title"><b>Epi-3</b>Killer Move</span>
+                    <p class="movie-list-item-desc">To give Lü Bu the upper hand against Thor, Brünnhilde summons her sister Randgriz and asks her to transform into a sacred weapon the Shield Breaker. </p>
+                    <button class="movie-list-button">Watch</button>
+                </div>
+                    <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="logo/rorepi4.jpg">
+                    <span class="movie-list-item-title"><b>Epi-4</b> Joy</span>
+                    <p class="movie-list-item-desc">Lü Bu's legs are crushed by the mighty Geirröd Thor's Hammer attack, but just when all hope seems lost, the warlord's trusty horse Red Hare rides in.</p>
+                    <button class="movie-list-button">Watch</button>
+                </div>
+                    <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="logo/rorepi5.jpg">
+                    <span class="movie-list-item-title"><b>Epi-5</b> FILE No.00000000001.</span>
+                    <p class="movie-list-item-desc">Chosen for the next round is the father of humankind and the man bearing more hatred towards the gods than anyone else: Adam himself.</p>
+                    <button class="movie-list-button">Watch</button>
+                </div>
+                    <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="logo/rorepi6.jpg">
+                    <span class="movie-list-item-title"><b>Epi-6</b> Great Emulation</span>
+                    <p class="movie-list-item-desc">Zeus insists on going up against Adam, who joins forces with Valkyrie Reginleif to obtain a most peculiar weapon: a knuckleduster. </p>
+                    <button class="movie-list-button">Watch</button>
+                </div>
+                    <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="logo/rorepi7.jpg">
+                    <span class="movie-list-item-title"><b>Epi-7 </b> Expelled from Paradise </span>
+                    <p class="movie-list-item-desc">Just when it looks like Adam will earn humankind the victory they long for, Zeus gathers his strength to ask Adam why he's really fighting.</p>
+                    <button class="movie-list-button">Watch</button>
+                </div>
+                    <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="logo/rorepi8.jpg">
+                    <span class="movie-list-item-title"><b>Epi-8</b> Grace Abounding </span>
+                    <p class="movie-list-item-desc">Zeus has transformed into his final most powerful form, but after the beating he's suffered, he may not last much longer in the fight. </p>
+                    <button class="movie-list-button">Watch</button>
+                </div>
+                    <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="logo/rorepi9.jpg">
+                    <span class="movie-list-item-title"><b>Epi-9</b> Tyrant of the Ocean </span>
+                    <p class="movie-list-item-desc">Humankind is desperate to win the next bout, but the god they're going up against is one of the mightiest of them all: Poseidon. </p>
+                    <button class="movie-list-button">Watch</button>
+                </div>
+                    <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="logo/rorepi10.jpg">
+                    <span class="movie-list-item-title"><b>Epi-10</b> Greatest Loser</span>
+                    <p class="movie-list-item-desc">Kojiro Sasaki uses his mighty Tsubame Gaeshi move to finish off Poseidon, but the god of the sea won't be sunk so easily. </p>
+                    <button class="movie-list-button">Watch</button>
+                </div>
+                    <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="logo/rorepi11.jpg">
+                    <span class="movie-list-item-title"><b>Epi-11</b>The Swallow Gazes into the Abyss</span>
+                    <p class="movie-list-item-desc">Through the power of Valkyrie Hrist, Kojiro's broken blade is transformed into dual swords, allowing him to tap into the depths of his inner strength. </p>
+                    <button class="movie-list-button">Watch</button>
+                </div>
+                    <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="logo/rorepi12.jpg">
+                    <span class="movie-list-item-title"><b>Epi-12</b> And Ragnarok Goes On</span>
+                    <p class="movie-list-item-desc">Despite Kojiro's Niten Ganryu duel blade method, Poseidon's powerful attacks continue to wear him down. But the battle isn't over yet. </p>
+                    <button class="movie-list-button">Watch</button>
+                </div>
+            </div>
+            <i onclick="arrow()"  class="fas fa-chevron-right arrow"></i>
+            <i onclick="brrow()"  class="fas fa-chevron-left brrow"></i>
+            
+        </div>
+    </div>
+        </div>
+        <div class="container">
+            <div class="content-container">
+               <div class="featured-content" style="background:linear-gradient(to bottom , rgba(0,0,0,0) 30%,#151515 100%),linear-gradient(to left , rgba(0,0,0,0) 30% ,#151515 100%),url('logo/spy_x_family.jpg') no-repeat center center/cover">
+               <img class="feature-title" src="logo/banner4.png">
+               <p class="featured-desc">A spy, an assassin and a telepath come together to pose as a family, each for their own reasons, while hiding their true identities from each other.</p>
+               <button class="featured-button" id="3" onclick="toggle()">WATCH</button>
+               <div class="trailer">
+                <video src="trailer/spyxfamily.mp4"  controls="true"></video>
+                <img src="logo/close.png" id="3" class="close"  onclick="close()">
+               </div>
+            </div>
+            <div class="movie-list-container">
+            <h1 class="movie-list-title">Spy X Family</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/sxfepi1.jpg">
+                        <span class="movie-list-item-title"><b>Epi-1</b> Operation Strix</span>
+                        <p class="movie-list-item-desc">Tasked with getting close to a high-ranking politician in a neighboring country, an elite spy adopts a young girl to strengthen his cover.</p>
+                        <button class="movie-list-button"   >Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/sxfepi2.jpg">
+                        <span class="movie-list-item-title"><b>Epi-2</b> Secure a Wife</span>
+                        <p class="movie-list-item-desc">Needing someone to act as Anya's mother for an interview at Eden College, Loid searches for a wife. He meets a beautiful young lady in a boutique.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/sxfepi3.jpg">
+                        <span class="movie-list-item-title"><b>Epi-3</b> Prepare for the Entrance Exam</span>
+                        <p class="movie-list-item-desc">After Yor moves into the Forger house, Loid takes her and Anya on an outing so they can all learn how to conduct themselves as an upper-class family.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/sxfepi4.jpg">
+                        <span class="movie-list-item-title"><b>Epi-4</b> An Interview at a Prestigious School</span>
+                        <p class="movie-list-item-desc">As Loid and his family arrive at Eden College for Anya's interview, the exacting housemaster Henderson observes and judges their behavior from afar.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/sxfepi5.jpg">
+                        <span class="movie-list-item-title"><b>Epi-5</b> Pass or Fail?</span>
+                        <p class="movie-list-item-desc">Feeling dejected after viewing the results of the entrance exam, Loid and his family run into Henderson, who gives them some encouraging information.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/sxfepi6.jpg">
+                        <span class="movie-list-item-title"><b>Epi-6</b> The Friendship Scheme</span>
+                        <p class="movie-list-item-desc">Loid visits a safe house for a briefing with his handler. After an excited Anya receives her school uniform, some ruffians set their sights on her.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/sxfepi7.jpg">
+                        <span class="movie-list-item-title"><b>Epi-7 </b>Target: The Second Son</span>
+                        <p class="movie-list-item-desc">Anya tries to work up the courage to apologize to Damian for hitting him. A worried Loid infiltrates Eden College to encourage her from the shadows</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/sxfepi8.jpg">
+                        <span class="movie-list-item-title"><b>Epi-8</b> The Counter-Secret Police Cover Operation</span>
+                        <p class="movie-list-item-desc">Yor’s brother secretly works for the National Security Agency, an organization that hunts spies and monitors citizens. One day, he visits the Forgers.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/sxfepi9.jpg">
+                        <span class="movie-list-item-title"><b>Epi-9</b> Show Off How in Love You Are</span>
+                        <p class="movie-list-item-desc">Yor gives herself some liquid courage before attempting to fulfill Yuri's request. The next morning, Loid secretly places a listening device on her.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/sxfepi10.jpg">
+                        <span class="movie-list-item-title"><b>Epi-10</b> The Great Dodgeball Plan</span>
+                        <p class="movie-list-item-desc">After Anya hears a rumor that students who excel in gym class can earn a Stella, she trains with Yor in preparation for a dodgeball competition.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/sxfepi11.jpg">
+                        <span class="movie-list-item-title"><b>Epi-11</b>  Stella</span>
+                        <p class="movie-list-item-desc">Loid takes Anya to volunteer at a hospital so she can earn a Stella. While there, she senses that a child has fallen into the rehabilitation pool.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/sxfepi12.jpg">
+                        <span class="movie-list-item-title"><b>Epi-12</b> Penguin Park</span>
+                        <p class="movie-list-item-desc">Loid decides to take Yor and Anya to an aquarium so they can keep up appearances as a family. But on the way there, he gets a new mission from WISE.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                </div>
+                <i onclick="arrow()"  class="fas fa-chevron-right arrow"></i>
+                <i onclick="brrow()"  class="fas fa-chevron-left brrow"></i>
+                
+            </div>
+        </div>
+            </div>
+        <div class="container">
+            <div class="content-container">
+               <div class="featured-content" style="background:linear-gradient(to bottom , rgba(0,0,0,0) 20%,#151515 100%),linear-gradient(to left , rgba(0,0,0,0) 30% ,#151515 100%),url('logo/kengan_ashura.jpg') no-repeat center center/cover">
+               <img class="feature-title" src="logo/banner3.png">
+               <p class="featured-desc">Ohma Tokita enters a hidden world where corporate disputes are settled in brutal gladiator bouts. Forget the money, he just wants to fight -- and win.</p>
+               <button class="featured-button" id="4" onclick="toggle()">WATCH</button>
+               <div class="trailer">
+                <video src="trailer/kengan_ashura.mp4"  controls="true"></video>
+                <img src="logo/close.png" id="4" class="close"  onclick="close()">
+               </div>
+            </div>
+            <div class="movie-list-container">
+            <h1 class="movie-list-title">Kengan Ashura Season-1</h1>
+            <div class="movie-list-wrapper">
+                <div class="movie-list">
+                    <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/kaepi1.jpg">
+                        <span class="movie-list-item-title"><b>Epi-1</b> Kengan</span>
+                        <p class="movie-list-item-desc">Chairman Nogi suddenly calls low-level employee Kazuo Yamashita into a meeting and gives him an unexpected -- and unwanted -- new assignment.</p>
+                        <button class="movie-list-button"   >Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/kaepi2.jpg">
+                        <span class="movie-list-item-title"><b>Epi-2</b> Super Human.</span>
+                        <p class="movie-list-item-desc">For his debut kengan match, Ohma calmly faces Yoshitake Real Estate's Lihito, an arrogant fighter with a superhuman vice-like grip.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/kaepi3.jpg">
+                        <span class="movie-list-item-title"><b>Epi-3</b> Tough Guy</span>
+                        <p class="movie-list-item-desc">Ohma thinks he’s got the upper hand, but Jun Sekibayashi quickly reminds him: pro-wrestlers are great actors, and they love to put on a show.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/kaepi4.jpg">
+                        <span class="movie-list-item-title"><b>Epi-4</b> Reunited</span>
+                        <p class="movie-list-item-desc">Chairman Nogi refuses to enter Ohma into the Annihilation Tournament, but there's another way for him to qualify -- and he'll need Yamashita's help.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/kaepi5.jpg">
+                        <span class="movie-list-item-title"><b>Epi-5</b> Brawl.</span>
+                        <p class="movie-list-item-desc">Unexpectedly, Ohma is thrown into an all-out brawl. Over 100 fighters are locked in a room, but only five can make it into the tournament finals.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/kaepi6.jpg">
+                        <span class="movie-list-item-title"><b>Epi-6</b> Pulling Strings</span>
+                        <p class="movie-list-item-desc">While some try to enjoy their time on the luxury liner, others strategize behind the scenes, with one savvy shogi player pulling a surprising move.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/kaepi7.jpg">
+                        <span class="movie-list-item-title"><b>Epi-7 </b>The Night Before</span>
+                        <p class="movie-list-item-desc">In a tense backroom meeting with all the corporate participants, the tournament brackets are finally decided. Tomorrow, the battles begin.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/kaepi8.jpg">
+                        <span class="movie-list-item-title"><b>Epi-8</b> The Battle Begins</span>
+                        <p class="movie-list-item-desc">The Kengan Annihilation Tournament kicks off with great fanfare. First up, jujitsu master Cosmo Imai goes up against American brawler Adam Dudley.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/kaepi9.jpg">
+                        <span class="movie-list-item-title"><b>Epi-9</b> Justice</span>
+                        <p class="movie-list-item-desc">Nentendo’s Haruo Kohno combines his monstrous size with surprising speed and agility, but riot cop Seishu Akoya’s got a secret plan in place.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/kaepi10.jpg">
+                        <span class="movie-list-item-title"><b>Epi-10</b>Sister</span>
+                        <p class="movie-list-item-desc">In a battle between two storied lineages, Raian of the lethal Kure clan takes on Mokichi Robinson, scion of a legendary 19th century kengan fighter.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/kaepi11.jpg">
+                        <span class="movie-list-item-title"><b>Epi-11</b> Ashura</span>
+                        <p class="movie-list-item-desc">Ohma goes into his first fight of the tournament with confidence, but he struggles against Ryo Inaba’s creepy, unorthodox fighting style.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                        <div class="movie-list-item">
+                        <img class="movie-list-item-img" src="logo/kaepi12.jpg">
+                        <span class="movie-list-item-title"><b>Epi-12</b>  Father and Son</span>
+                        <p class="movie-list-item-desc">The tournament continues with plenty of rule-bending and inner-dealings in and out of the arena. Ohma chafes under Yamashita's fatherly affection.</p>
+                        <button class="movie-list-button">Watch</button>
+                    </div>
+                </div>
+                <i onclick="arrow()"  class="fas fa-chevron-right arrow"></i>
+                <i onclick="brrow()"  class="fas fa-chevron-left brrow"></i>
+                
+            </div>
+        </div>
+            </div>
+<script src="weeb.js"></script>
+ </body>     
+</html>
