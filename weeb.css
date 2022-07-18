@@ -809,14 +809,40 @@ max-width: 32px;
  }
 
 
+ @media only screen and (max-width: 480px)
+ {
+    
+   .featured-content
+      {
+        height: 200px;
+       width: 420px;
+      
+      }
 
 
+  
+ }
+
+
+ @media only screen and (max-width: 424px)
+ {
+    
+   .featured-content
+      {
+        height: 200px;
+       width: 364px;
+      
+      }
+
+
+  
+ }
 
 
 
   
 
-   @media only screen and (max-width: 460px)
+   @media only screen and (max-width: 420px)
  {
     
    .featured-content
@@ -829,6 +855,9 @@ max-width: 32px;
 
   
  }
+
+
+
 
     @media only screen and (max-width: 360px){
   
